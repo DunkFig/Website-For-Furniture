@@ -1,0 +1,94 @@
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+canvas {
+  display: block;
+}
+
+#container{
+  position: absolute;
+  z-index: 100;
+  background-color: white;
+}
+
+#seedHolder{
+  margin-top: 10px;
+  margin-left: 2px ;
+  font-size: 12px;
+}
+
+.topBut{
+  margin: 2px;
+  width: 60px;
+  height: 30px;
+  font-size: 10px;
+}
+
+.topBut:hover{
+background-color: yellow;
+}
+
+
+#startWhole{
+  position: absolute;
+  z-index: 500;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.926);
+}
+
+#startH{
+  text-align: center;
+  font-family: 'DM Serif Text', serif;
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  width:50%;
+  margin-left: 25%;
+  margin-top: 130px;
+  padding: 25px;
+  border-radius: 20px;
+  background-color:  rgba(152, 177, 242, 0.857);
+  border: 2px solid rgb(255, 255, 255);
+}
+
+
+#startBod{
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+
+#dropDown{
+  padding: 20px;
+  text-align: left;
+  z-index: 200;
+  position: absolute;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: rgba(152, 177, 242, 0.611);
+  color:rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+
+#hello{
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'DM Serif Text', serif;
+  color: rgb(255, 255, 255);
+  font-size: 3.3rem;;
+  height: 100%;
+  padding: 3.0rem;
+  /* background: linear-gradient(to top, #ede7f0 0%, #0084ff 100%); */
+  background: #0084ff
+}
