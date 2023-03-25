@@ -45,7 +45,7 @@
         Then you can walk away.
       </div>
 
-      <button id="enter"> ENTER</button>
+      <button id="enter"> LOADING</button>
     </div>
   </div>
 
@@ -85,13 +85,25 @@ if (window.innerWidth < 1000){
   <script>
     let backgroundSound
     let soundOn = false
+    let loaded = false 
+
+    document.addEventListener('DOMContentLoaded', function() {
+   
+      document.getElementById('enter').innerHTML = 'Enter'
+      loaded = true
+
+
+  }, false);
 
     document.getElementById('enter').addEventListener("click",() =>{
+
+      if(loaded == true){
       document.getElementById('startWhole').remove()
       document.getElementById('main').requestFullscreen();
       backgroundSound = document.getElementById('background-sound')
       backgroundSound.play()
       soundOn = true;
+      }
     })
   
     document.getElementById('saveBut').addEventListener('click', ()=>{
